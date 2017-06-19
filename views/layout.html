@@ -5,15 +5,23 @@
     <!-- meta -->
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap-responsive.css" />
+
 </head>
 
 <body>
-    <p>---------------------通用网页头部---------------------</p>
-    <div class="inner"><a href="./Login" class="light">登录</a></div>
-    <div class="inner"><a href="./Register" class="light">注册</a></div>
-
-    <div id="main"
-    <%- body %>
+    <div class='navbar'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <ul class='nav pull-right'>
+                    <li><a href="/Login" class="light">登录</a></li>
+                    <li><a href="/Login/register" class="light">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main" <%- body %>
     </div>
 
     <p>---------------------通用网页底部---------------------</p>
